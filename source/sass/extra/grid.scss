@@ -1,0 +1,31 @@
+.grid {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -15px;
+  margin-top: -10px;
+}
+
+.grid + .grid {
+  margin-top: 30px;
+}
+
+
+
+.grid__item {
+  justify-content: space-between;
+  padding-bottom: -10px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &--half {
+    width: 50%;
+  }
+
+  &--index {
+    width: 33.3%;
+  }
+
+  &--big {
+    width: 66.7%;
+  }
+}

@@ -1,0 +1,29 @@
+.document {
+  @include reset-list;
+  padding: 19px 22px 19px 27px;
+}
+
+.document__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.document__text {
+  display: inline-flex;
+  align-items: baseline;
+  margin-right: 10px;
+  flex: 1 0 auto;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $white;
+
+  &::after {
+    content: "";
+    height: 1px;
+    flex: 1 0 auto;
+    margin-left: 10px;
+    background-color: currentColor;
+  }
+}

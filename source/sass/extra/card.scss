@@ -1,0 +1,113 @@
+
+
+  .card {
+    
+    background-color: $dark-violet;
+    box-shadow: 7px 7px 8px $lighter-black;
+    border-radius: 18px;
+  
+    &--index {
+      height: 100%;
+      padding: 25px 20px 17px 20px;
+    }
+  
+    &--report {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &--rent {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 11px;
+    }
+  }
+  
+  .card__title {
+   display: flex;
+   margin-bottom: 40px;
+    margin: 0;
+    padding: 25px 20px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    color: $white;
+  }
+  
+  .card__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card__list {
+
+    margin-top: 40px;
+    @include reset-list;
+    color: $white;
+  }
+  
+  .card__heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .card__heading {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $white;
+  
+    &--rent {
+      padding-top: 25px;
+    }
+  }
+  
+  .card__text {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: $white;
+  }
+  
+  .card__link {
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: $blue;
+  }
+  
+  .card__link--statistic {
+    padding-right: 26px;
+  }
+  
+  
+  .card__link--statistic::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 22px;
+    height: 21px;
+    background-image: url("../img/icon-blue-arrow.svg");
+    background-repeat: no-repeat;
+  }
+  
+  .card__wrapper-rent {
+    display: flex;
+  }
+  
+  .card__helper-rent {
+    margin-bottom: 26px;
+    margin-right: 22px;
+  }
+  
+  .card__img-wrapper--field {
+    text-align: right;
+  }
+  
+  .card__img-wrapper--map {
+    margin-left: 20px;
+  }

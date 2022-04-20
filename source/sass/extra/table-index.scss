@@ -1,0 +1,28 @@
+.table-index {
+  margin-left: -11px;
+  border-collapse: collapse;
+  color: $white;
+}
+
+.table-index thead {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.table-index th {
+  padding: 9px 34px 9px 11px;
+  font-weight: inherit;
+  text-align: left;
+}
+
+.table-index td {
+  padding: 9px 34px 9px 11px;
+  font-size: 14px;
+  line-height: 19px;
+  border-top: 1px solid $dark-blue;
+
+  &:not(:first-child) {
+    border-left: 1px solid $dark-blue;
+  }
+}

@@ -1,0 +1,119 @@
+.organization {
+  
+  position: relative;
+  border-top: 1px solid $dark-blue;
+  padding: 25px 20px;
+
+  &--open-arrow::before,
+  &--close-arrow::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 7px;
+    top: 30px;
+    right: 25px;
+    background-repeat: no-repeat;
+  }
+
+  &--open-arrow::before {
+    background-image: url("../img/icon-open-arrow.svg");
+  }
+
+  &--close-arrow::before {
+    background-image: url("../img/icon-close-arrow.svg");
+  }
+
+  &--close-arrow::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    top: 60px;
+    right: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-file.svg");
+  }
+}
+
+.organization__title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $white;
+
+  &--old {
+    margin-top: 32px;
+  }
+}
+
+.organization__details {
+  margin: 0;
+  font-weight: 300;
+  color: $pink;
+}
+
+.organization__old-title {
+  position: relative;
+  margin-top: 11px;
+  margin-bottom: 0;
+  padding-left: 23px;
+  font-size: 14px;
+  line-height: 19px;
+  color: $light-violet;
+
+  &--icon::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon-old-title.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.organization__head {
+  margin-top: 21px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.organization__document {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/*.card__contacts-list {
+  @include reset-list;
+}*/
+
+.organization__contacts {
+  position: relative;
+  padding-left: 23px;
+  font-size: 14px;
+  line-height: 19px;
+
+  &--address::before,
+  &--staff::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--address::before {
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/icon-address.svg");
+  }
+
+  &--staff::before {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-card-staff.svg");
+  }
+}

@@ -1,0 +1,25 @@
+.button {
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+
+  &--add,
+  &--settings {
+    margin-left: 23px;
+    background-color: $violet;
+  }
+
+  &--action {
+    padding: 7px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $blue;
+    background-color: $deeper-violet;
+    border-radius: 6px;
+  }
+}
+
+.button__icon {
+  display: block;
+}
